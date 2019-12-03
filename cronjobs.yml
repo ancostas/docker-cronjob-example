@@ -1,4 +1,4 @@
 cronJobs:
   - name: docker-cronjob-example
     schedule: "*/1 * * * *"
-    command: ["/bin/sh", "-c", "./hello_world.sh"]
+    command: ["/bin/sh", "-c", "echo hello world"]
