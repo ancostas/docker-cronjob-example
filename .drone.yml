@@ -17,7 +17,7 @@ pipeline:
     image: quay.io/ipedrazas/drone-helm
     release: docker-example-cronjobs
     namespace: server-tig
-    secrets: [staging_kubernetes_token]
+    secrets: [ staging_kubernetes_token ]
     environment:
       - API_SERVER=https://api.staging.corp.mongodb.com
     prefix: prod
