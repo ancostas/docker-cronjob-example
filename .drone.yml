@@ -20,7 +20,7 @@ pipeline:
     secrets: [ staging_kubernetes_token ]
     environment:
       - API_SERVER=https://api.staging.corp.mongodb.com
-    prefix: prod
+    prefix: staging
     helm_repos: mongodb=https://10gen-ops.github.io/helm-charts
     chart: mongodb/cronjobs
     chart-version: 1.5.1
