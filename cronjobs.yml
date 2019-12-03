@@ -1,0 +1,4 @@
+cronJobs:
+  - name: docker-cronjob-example
+    schedule: "*/1 * * * *"
+    command: ["etl-jira-mongo", "-u", "$(JIRA_USER)", "-p", "$(JIRA_PASSWORD)", "--mongo-uri", "$(MONGO_URI)"]
